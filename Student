@@ -1,0 +1,54 @@
+import javax.swing.JOptionPane;
+
+public class Student
+{
+	//private data fields
+	int idNumber;
+	double creditHours;
+	double pointsEarned;
+	double gpa;
+	
+	//public get and set methods
+	
+	//responds to get method call
+	public int getIdNum()
+	{
+		return idNumber;
+	}
+	
+	//set number method receives input and assigns it to variable
+	public void setIdNum(int studentID)
+	{
+		idNumber = studentID;
+	}
+	//responds to get method call
+	public double getCredHrs()
+	{
+		return creditHours;
+	}
+	//set credit method receives input and assigns it to a variable
+	public void setCredHrs(double credits)
+	{
+		creditHours = credits;
+	}
+	//responds to get method call
+	public double getPoints()
+	{
+		return pointsEarned;
+	}
+	
+	public void setPoints(double points)
+	{
+		pointsEarned = points;
+	}
+
+	//public double gradePointAverage()
+	//{
+	//	gpa = pointsEarned/creditHours;
+	//}
+	
+	
+	
+	
+	
+}
