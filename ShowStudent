@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+
+public class ShowStudent
+{
+	public static void main(String[] args)
+	{
+		//declare variables
+		String studentNumber;
+		int studentIdNumber;
+		
+		//calls up object constructor via "get" method
+		Student myStudent;
+		myStudent = getStudentData(); 
+				
+		
+		//retrieve values via "get" methods
+		System.out.println("Student ID Number is " + myStudent.getIdNum() );
+		System.out.println("Total credits = " + myStudent.getCredHrs() );
+		System.out.println("Points Earned = " + myStudent.getPoints() );
+			
+	}
+	
+	//instantiates student objects
+	public static Student getStudentData()
+	{
+		Student newStudent = new Student();
+		int id;
+		double credits;
+		double grade;
+		
+		
+		Scanner input = new Scanner(System.in);
+		//accepts user input for student number
+		System.out.println("Enter Student ID number ");
+		id = input.nextInt();
+		//calls set number method
+		newStudent.setIdNum(id);
+		
+		//accepts user input for credits
+		System.out.println("Enter credits taken ");
+		credits = input.nextDouble();
+		//calls set credit method
+		newStudent.setCredHrs(credits);
+		
+		//accepts user input for points
+		System.out.println("Enter points earned ");
+		grade = input.nextDouble();
+		//calls set points method
+		newStudent.setPoints(grade);
+		//returns newStudent to calling method "getStudentData"
+		return newStudent;
+		
+	}
+	
+}
