@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class ShowStudent
 {
 	public static void main(String[] args)
@@ -52,5 +51,4 @@ public class ShowStudent
 		return newStudent;
 		
 	}
-	
 }
